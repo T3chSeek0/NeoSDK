@@ -20,12 +20,12 @@ let package = Package(
         .binaryTarget(
                     name: "NeoNetworking",
                     url: "https://github.com/T3chSeek0/NeoSDK/blob/main/Sources/NeoNetworking.xcframework.zip",
-                    checksum: "09aa253669b011c40d341b57fe5e61359eb3ab95fcb77b608120f01cbe502c1e"
+                    checksum: "e6033781a5a8f36c4bbcb51b37ec06bf3809f94923b93c7144d084a2dd204809"
                 ),
         .binaryTarget(
                     name: "NeoLifestyle",
                     url: "https://github.com/T3chSeek0/NeoSDK/blob/main/Sources/NeoLifestyle.xcframework.zip",
-                    checksum: "ee626e16a43b327c1499b3711d4e3469e2935c9b8eb99afbdcfdd6325007d0f0"
+                    checksum: "4957298817f513264963c0084fce2c7c339982e7dc5a33a204790deaf6c3dd6b"
                 ),
     ]
 )
