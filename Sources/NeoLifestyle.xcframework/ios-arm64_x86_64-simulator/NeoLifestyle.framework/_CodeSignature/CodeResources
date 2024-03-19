@@ -6,63 +6,55 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ImoBWryLVRqlfS6hUtuvIkfElZc=
+		JIzKZno43vNwCOmmhgMBVhUfYJs=
 		</data>
 		<key>Headers/NeoLifestyle-Swift.h</key>
 		<data>
-		+/8EtT+BzmUaS+zrgCM1AvCidU8=
+		6Ibcuare4iZuX7RO9FuayNPTAes=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U9+mFe0n9c+ztE0ax3nim8lFIh4=
-		</data>
-		<key>Modules/NeoLifestyle.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		bQ5n9XRCr8pdYGWBNTXdfria2/o=
-		</data>
-		<key>Modules/NeoLifestyle.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		xtLFvrezKtbMuqiMm5X/i7e7iiE=
+		laXsdiTbwHucMgiV2BnWN9XhIsI=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+d78H6mTB8OSyCwmRs9zNEC2aJs=
+		5diJjAHMBhGiMMaHdTe/Jza31Ok=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0Qr6WOMU+ZYYkeGbH2v4N8ZlFQE=
+		8H9T0FFrvXFLlSzOGtU6Vm66pfw=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ge1KCuZeOfnF6eclvh2FJuaRG3M=
+		9Of5+oD80jQo4lDqu43F1NKMWx8=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0Qr6WOMU+ZYYkeGbH2v4N8ZlFQE=
+		8H9T0FFrvXFLlSzOGtU6Vm66pfw=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oOureb+MvT0G4vamxMTQSRLplEc=
+		hPRjQBKJXVSUoe4AmBL1Bt0lki8=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+d78H6mTB8OSyCwmRs9zNEC2aJs=
+		5diJjAHMBhGiMMaHdTe/Jza31Ok=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OdCzUO6mtjBgzqK1/xzNL6z2gWI=
+		G30twfIGDt2pUjV5tnp+ZlOgBds=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GP/cPx/JixsF132rJ1J4UOUFzDM=
+		tKFLD5WjqFEgmBRToY7VuSe47wk=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OdCzUO6mtjBgzqK1/xzNL6z2gWI=
+		G30twfIGDt2pUjV5tnp+ZlOgBds=
 		</data>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AfQnPF2eIXkAPS6ksmOXcRV5KeQ=
+		QcbbO9vCl4MW4OnYyfDJaZEeb+0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,98 +67,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0aWeEjDRbRF09hQvDKK8mKG2lHtE7CbglYyXwE9dQI=
+			qi6kS9F7GyZfbNQabx+8fK16TMxKP7JszX4AaICJh7Y=
 			</data>
 		</dict>
 		<key>Headers/NeoLifestyle-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lukj8ppo4Yc161U8d/3dBzRMAZHKb1epDmF37UUNBJ0=
-			</data>
-		</dict>
-		<key>Modules/NeoLifestyle.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iNRQZ2W9cE3lm55AvNGX8xXuXHD8Hu8yjA8RoUqm1go=
-			</data>
-		</dict>
-		<key>Modules/NeoLifestyle.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8Y68Sbj7MJ23RvhRfFXP+CVWeFIMS9VvJq48XX3wuIM=
+			zT8/3Qn9Vsi2nGrfgq2xZpI1wFM4GJziF/Fa+JvNW9g=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5NcumUZYSNm/D7UK/QG/UJVSEUdTzYvHN3ywRDdVdQ=
+			I2Q/85lzQ5dQV8y/7lt1FCXIGXjYNiTerBM0meOy/aw=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1pW+b7e4/LIAcyNekM38iu34yFSClCmeTLMMd6hqpa4=
+			8aHjdWlO22S4EqNXoDMvV/lccqTbO4wG1ysxK5YhYjM=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2OuNyuUO3xlku0sHQjUSo5syvpUBy+23CwVhdyTPKjg=
+			Ou9jW1/JF1Smbhqp/m9YR4mUA0vIVrjLvMsNK+ep8hs=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1pW+b7e4/LIAcyNekM38iu34yFSClCmeTLMMd6hqpa4=
+			8aHjdWlO22S4EqNXoDMvV/lccqTbO4wG1ysxK5YhYjM=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			li0YTpXBUTD2XXQV7nzEYfI0/EzdRHZDnXD9lmx+/XE=
+			ATvfqX3brYZdsXUSQ/2QyLMa0f2g7dV3H2e6h3Y18dM=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5NcumUZYSNm/D7UK/QG/UJVSEUdTzYvHN3ywRDdVdQ=
+			I2Q/85lzQ5dQV8y/7lt1FCXIGXjYNiTerBM0meOy/aw=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2yJSo0HfOO3QVmmoUD3Q1V1X7ELgcm+ZSKz6QiD7Iv4=
+			o3I6IxDTUyDF0MvR+ROkcOGGy+7kpplDZYs9oogyCpI=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/B3BVJgW8dCsuHuMyJRwy94q/1eGXCedbO4yBK/pR0=
+			4HdvUBcueCoT7phM+bNhjcGKNrqvwVUomjXf9sh7Lt0=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2yJSo0HfOO3QVmmoUD3Q1V1X7ELgcm+ZSKz6QiD7Iv4=
+			o3I6IxDTUyDF0MvR+ROkcOGGy+7kpplDZYs9oogyCpI=
 			</data>
 		</dict>
 		<key>Modules/NeoLifestyle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bnLQutSKAbvgUH//gZQk2850jz3JZ5mzdq7QBQGMhQo=
+			L19dyRF+wNqTMC36mCWka1KrqgnkBC/LXFx614GZmhs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

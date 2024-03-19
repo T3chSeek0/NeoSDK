@@ -10,4 +10,4 @@
 #   - Alamofire
 
 
-# **NOTE: You will need to add Alamofire to your project when using this SDK!
+# **NOTE: You will need to add Alamofire to your project when using this SDK!**
