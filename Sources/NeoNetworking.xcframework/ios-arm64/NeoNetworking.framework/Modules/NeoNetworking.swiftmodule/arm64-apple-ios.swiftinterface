@@ -1,0 +1,207 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name NeoNetworking
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension NeoNetworking.HTTPStatusCode {
+  public var isInformational: Swift.Bool {
+    get
+  }
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var isRedirection: Swift.Bool {
+    get
+  }
+  public var isClientError: Swift.Bool {
+    get
+  }
+  public var isServerError: Swift.Bool {
+    get
+  }
+}
+extension NeoNetworking.HTTPStatusCode {
+  public var localizedReasonPhrase: Swift.String {
+    get
+  }
+}
+extension NeoNetworking.HTTPStatusCode : Swift.CustomDebugStringConvertible, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension NeoNetworking.HTTPStatusCode {
+  public init?(HTTPResponse: Foundation.HTTPURLResponse?)
+}
+extension Foundation.HTTPURLResponse {
+  @objc(statusCodeValue) dynamic public var statusCodeEnum: NeoNetworking.HTTPStatusCode {
+    @objc get
+  }
+  public var statusCodeValue: NeoNetworking.HTTPStatusCode? {
+    get
+  }
+}
+public protocol EndPoint {
+  var header: NeoNetworking.APIHeader { get }
+  var baseURL: Swift.String { get }
+  var path: Swift.String { get }
+  var httpMethod: NeoNetworking.APIMethod { get }
+  var task: NeoNetworking.APITask { get }
+}
+public typealias APIHeader = [Swift.String : Swift.String]
+public typealias APIParams = [Swift.String : Any]
+public enum APIMethod : Swift.String {
+  case GET
+  case POST
+  case PUT
+  case DELETE
+  case PATCH
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum APITask {
+  case request
+  case requestParameters(parameters: NeoNetworking.APIParams, encoding: NeoNetworking.APIEncoding)
+  case requestBody(httpBody: any Swift.Encodable, encoding: NeoNetworking.APIEncoding)
+  case requestWithParametersAndBody(parameters: NeoNetworking.APIParams, httpBody: any Swift.Encodable, encoding: NeoNetworking.APIEncoding)
+}
+public protocol ErrorMapper {
+  func mapError(from data: Foundation.Data) -> (any Foundation.LocalizedError)?
+}
+open class BaseAPI<K> where K : NeoNetworking.EndPoint {
+  public init()
+  open func requestDecodable<T>(endpoint: K, interceptor: (any Alamofire.RequestInterceptor)? = nil, customErrorMapper: (any NeoNetworking.ErrorMapper)? = nil, completion: @escaping (Swift.Result<T, any Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  #if compiler(>=5.3) && $AsyncAwait
+  open func requestDecodable<T>(endpoint: K, interceptor: (any Alamofire.RequestInterceptor)? = nil, customErrorMapper: (any NeoNetworking.ErrorMapper)? = nil) async throws -> T where T : Swift.Decodable
+  #endif
+  open func request(endpoint: K, interceptor: (any Alamofire.RequestInterceptor)? = nil, customErrorMapper: (any NeoNetworking.ErrorMapper)? = nil, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  open func request(endpoint: K, interceptor: (any Alamofire.RequestInterceptor)? = nil, customErrorMapper: (any NeoNetworking.ErrorMapper)? = nil) async throws
+  #endif
+  open func requestData(endpoint: K, interceptor: (any Alamofire.RequestInterceptor)? = nil, customErrorMapper: (any NeoNetworking.ErrorMapper)? = nil, completion: @escaping (Swift.Result<Any, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  open func requestData(endpoint: K, interceptor: (any Alamofire.RequestInterceptor)? = nil, customErrorMapper: (any NeoNetworking.ErrorMapper)? = nil) async throws -> Any
+  #endif
+  @objc deinit
+}
+public enum APIEncoding {
+  case jsonEncoding
+  case urlEncoding
+  case urlAndJsonEncoding
+  public static func == (a: NeoNetworking.APIEncoding, b: NeoNetworking.APIEncoding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public enum HTTPStatusCode : Swift.Int {
+  case `continue` = 100
+  case switchingProtocols = 101
+  case processing = 102
+  case checkpoint = 103
+  case ok = 200
+  case created = 201
+  case accepted = 202
+  case nonAuthoritativeInformation = 203
+  case noContent = 204
+  case resetContent = 205
+  case partialContent = 206
+  case multiStatus = 207
+  case alreadyReported = 208
+  case imUsed = 226
+  case multipleChoices = 300
+  case movedPermanently = 301
+  case found = 302
+  case seeOther = 303
+  case notModified = 304
+  case useProxy = 305
+  case temporaryRedirect = 307
+  case permanentRedirect = 308
+  case badRequest = 400
+  case unauthorized = 401
+  case paymentRequired = 402
+  case forbidden = 403
+  case notFound = 404
+  case methodNotAllowed = 405
+  case notAcceptable = 406
+  case proxyAuthenticationRequired = 407
+  case requestTimeout = 408
+  case conflict = 409
+  case gone = 410
+  case lengthRequired = 411
+  case preconditionFailed = 412
+  case payloadTooLarge = 413
+  case uriTooLong = 414
+  case unsupportedMediaType = 415
+  case rangeNotSatisfiable = 416
+  case expectationFailed = 417
+  case imATeapot = 418
+  case misdirectedRequest = 421
+  case unprocessableEntity = 422
+  case locked = 423
+  case failedDependency = 424
+  case upgradeRequired = 426
+  case preconditionRequired = 428
+  case tooManyRequests = 429
+  case requestHeaderFieldsTooLarge = 431
+  case iisLoginTimeout = 440
+  case nginxNoResponse = 444
+  case iisRetryWith = 449
+  case blockedByWindowsParentalControls = 450
+  case unavailableForLegalReasons = 451
+  case nginxSSLCertificateError = 495
+  case nginxSSLCertificateRequired = 496
+  case nginxHTTPToHTTPS = 497
+  case tokenExpired = 498
+  case nginxClientClosedRequest = 499
+  case internalServerError = 500
+  case notImplemented = 501
+  case badGateway = 502
+  case serviceUnavailable = 503
+  case gatewayTimeout = 504
+  case httpVersionNotSupported = 505
+  case variantAlsoNegotiates = 506
+  case insufficientStorage = 507
+  case loopDetected = 508
+  case bandwidthLimitExceeded = 509
+  case notExtended = 510
+  case networkAuthenticationRequired = 511
+  case siteIsFrozen = 530
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum APIError : Foundation.LocalizedError, Swift.Equatable {
+  case statusCodeError(statusCode: NeoNetworking.HTTPStatusCode, message: Swift.String)
+  case jsonDecodingError
+  case unknownError
+  case apiRequestFailed
+  case badURL
+  case encodingFailed
+  case networkError
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (lhs: NeoNetworking.APIError, rhs: NeoNetworking.APIError) -> Swift.Bool
+}
+extension NeoNetworking.HTTPStatusCode : Swift.Equatable {}
+extension NeoNetworking.HTTPStatusCode : Swift.Hashable {}
+extension NeoNetworking.HTTPStatusCode : Swift.RawRepresentable {}
+extension NeoNetworking.APIMethod : Swift.Equatable {}
+extension NeoNetworking.APIMethod : Swift.Hashable {}
+extension NeoNetworking.APIMethod : Swift.RawRepresentable {}
+extension NeoNetworking.APIEncoding : Swift.Equatable {}
+extension NeoNetworking.APIEncoding : Swift.Hashable {}

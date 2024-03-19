@@ -1,0 +1,4 @@
+framework module NeoNetworking {
+  header "NeoNetworking-Swift.h"
+  requires objc
+}

@@ -1,0 +1,58 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name NeoLifestyle
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import NeoNetworking
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+#warning("should add Colors from design system")
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class LifestyleViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+}
+extension NeoLifestyle.LifestyleViewController : UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+}
+public protocol CollectionCellView : UIKit.UIView {
+  associatedtype T
+  func updateView(with viewModel: Self.T)
+  func invalidate()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CollectionCell<V> : UIKit.UICollectionViewCell where V : NeoLifestyle.CollectionCellView {
+  @_Concurrency.MainActor(unsafe) public var viewModel: V.T? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func invalidateStyles()
+  @objc deinit
+}
+public protocol LifestyleDelegate : AnyObject {
+  func refreshTokenDidExpire(completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+}
+public struct LifestyleAppConfig {
+  public init(channelId: Swift.String, channelSecret: Swift.String, token: Swift.String)
+}
+@_hasMissingDesignatedInitializers final public class Lifestyle {
+  weak final public var delegate: (any NeoLifestyle.LifestyleDelegate)?
+  public static func initialize(config: NeoLifestyle.LifestyleAppConfig) -> NeoLifestyle.Lifestyle
+  final public var lifestyleViewController: NeoLifestyle.LifestyleViewController {
+    get
+    set
+  }
+  @objc deinit
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public func styleNavigationController()
+}

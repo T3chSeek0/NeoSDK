@@ -1,0 +1,4 @@
+framework module NeoLifestyle {
+  header "NeoLifestyle-Swift.h"
+  requires objc
+}
